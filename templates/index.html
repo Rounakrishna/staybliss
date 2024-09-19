@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html dir="ltr" lang="en-US"class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="ie ie6 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="ie ie7 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="ie ie9 lte9"><![endif]-->
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1549523692559482');
+        fbq('track', 'PageView');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Suranna&amp;display=swap" rel="stylesheet" />
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5VSDDBCL');
+    </script>
+    <meta content="7u59a4oedzphmsd42pjns10nxmqhzt" name="facebook-domain-verification" />
+    <meta content="1fs6ylg2ydnzxluctk3dum2354uaic" name="facebook-domain-verification" />
+    <script>
+        ! function(w, d, t) {
+            w.TiktokAnalyticsObject = t;
+            var ttq = w[t] = w[t] || [];
+            ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function(t, e) {
+                t[e] = function() {
+                    t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            };
+            for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+            ttq.instance = function(t) {
+                for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+                return e
+            }, ttq.load = function(e, n) {
+                var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+                ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+                n = document.createElement("script");
+                n.type = "text/javascript", n.async = !0, n.src = i + "?sdkid=" + e + "&lib=" + t;
+                e = document.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(n, e)
+            };
+
+            ttq.load('CE2QLTJC77UE9HS46RSG');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+    <link as="style" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700?display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload" /><noscript><link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700?display=swap" rel="stylesheet"/></noscript>
+    <link as="style" href="https://d79k57b9f2p6h.cloudfront.net/fontawesome/5.12.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'"
+        rel="preload" /><noscript><link href="https://d79k57b9f2p6h.cloudfront.net/fontawesome/5.12.0/css/all.min.css" rel="stylesheet" type="text/css"/></noscript>
+    <link as="style" href="https://d79k57b9f2p6h.cloudfront.net/fontawesome/5.12.0/css/v4-shims.min.css" onload="this.onload=null;this.rel='stylesheet'"
+        rel="preload" /><noscript><link href="https://d79k57b9f2p6h.cloudfront.net/fontawesome/5.12.0/css/v4-shims.min.css" rel="stylesheet" type="text/css"/></noscript>
+    <link as="style" href="https://d79k57b9f2p6h.cloudfront.net/animation/animate.css" onload="this.onload=null;this.rel='stylesheet'"
+        rel="preload" /><noscript><link href="https://d79k57b9f2p6h.cloudfront.net/animation/animate.css" rel="stylesheet" type="text/css"/></noscript>
+
+        
+    <link href="{% static "css/simp.min.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/custom-plugins.css" %}" rel="stylesheet" type="text/css" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+
+            "name": "The Clarks Hotels \u0026 Resorts",
+            "description": "The Clarks Hotels \u0026 Resorts have some of the top hotels in India. We are also one of the biggest brands with properties spanning across the country.",
+            "telephone": "1800 202 7707",
+            "email": "centralreservations@theclarkshotels.com",
+
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "707 Emaar Capital Tower,\nMehrauli - Gurgaon Road, Sector 26\nGurugram - Haryana 122002",
+                "addressLocality": "",
+                "addressCountry": ""
+            },
+
+
+
+            "logo": "https://res.cloudinary.com/simplotel/image/upload/x_503,y_731,w_2755,h_837,r_0,c_crop,q_90/w_355,h_200,f_auto,c_fit/the-clarks-hotels-resorts/Final_logo_Black1_hbghqk",
+
+
+
+            "containsPlace": [],
+
+            "photo": "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/the-clarks-hotels-resorts/Palampur_sqluno",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/the-clarks-hotels-resorts/Palampur_sqluno"
+            },
+
+            "url": "https://www.theclarkshotels.com/",
+            "sameAs": [
+                "https://www.facebook.com/theclarkshotelsandresorts", "https://www.linkedin.com/company/theclarkshotelsresorts", "https://www.instagram.com/theclarkshotelsandresorts/?utm_medium=copy_link", "+91-92058 67733", "https://www.youtube.com/@theclarkshotelsandresorts"
+            ]
+        }
+    </script>
+    <title>Official Website | The Clarks Hotels &amp; Resorts | Top Hotels in India</title>
+    <meta content="The Clarks Hotels &amp; Resorts have some of the top hotels in India. We are also one of the biggest brands with properties spanning across the country."
+        name="Description" />
+    <meta content="Official Website | The Clarks Hotels &amp; Resorts | Top Hotels in India" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="https://www.theclarkshotels.com/" property="og:url" />
+    <meta content="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/the-clarks-hotels-resorts/Palampur_sqluno" property="og:image" />
+    <meta content="The Clarks Hotels &amp; Resorts have some of the top hotels in India. We are also one of the biggest brands with properties spanning across the country." property="og:description" />
+    <meta content="The Clarks Hotels &amp; Resorts, Hotels in Karnataka, Top Hotels in India" name="Keywords" />
+    <link href="https://www.theclarkshotels.com/" rel="canonical" />
+    <link href="https://fonts.googleapis.com/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://fonts.googleapis.com/" rel="preconnect" />
+    <link href="https://d79k57b9f2p6h.cloudfront.net/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://d79k57b9f2p6h.cloudfront.net/" rel="preconnect" />
+    <link href="https://res.cloudinary.com/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://res.cloudinary.com/" rel="preconnect" />
+    <link href="https://fonts.gstatic.com/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link href="https://cdn.simplotel.com/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://cdn.simplotel.com/" rel="preconnect" />
+    <link href="https://cdnjs.cloudflare.com/" rel="dns-prefetch" />
+    <link crossorigin="" href="https://cdnjs.cloudflare.com/" rel="preconnect" />
+    <meta content="#2b2a29" name="theme-color" />
+    <link href="https://res.cloudinary.com/simplotel/image/upload/x_640,y_0,w_228,h_228,c_crop/w_32,h_32,c_scale/the-clarks-hotels-resorts/Clarks_logo_white_FINAL_qzlzaq.ico" rel="shortcut icon" />
+    <style type="text/css">
+        header .navbar-nav>li:not(#menuFilterLoc):hover>.dropdown-menu {
+            display: block;
+        }
+    </style>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script><![endif]-->
+    <!--[if IE]><link rel="stylesheet" href="./css/ie.css"><![endif]-->
+    <meta content="BDAACE752F021F8ED5D1AD5A93AAF201" name="msvalidate.01" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="parent-hotel for-homepage explorer_chain" data-hotelid="6225"><noscript><img height="1" src="https://www.facebook.com/tr?id=1549523692559482&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W7XJS3F7" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+    <main class="outer-page">
+
+
+
+
+
+
+
+
+
+        {% comment %} ---------------------------------tailwind--------------------------------- {% endcomment %}
+       
+
+        
+
+
+
+
+      
+       
+       
+        {% include "components/header.html" %}
+        {% include "components/front.html" %}
+
+
+
+
+
+      
+        <div class="homepage">
+            <div class="container-wrapper">
+                <div class="clearfix address-block-details text-center">
+                    <div class="hotel-info col-xs-12">
+                        <h1 class="hotel-heading"></h1>
+                    </div>
+                    <div class="hotel-contacts col-xs-12"><address class="row"><h6 class="hotel-address">707 Emaar Capital Tower, Mehrauli - Gurgaon Road, Sector 26 Gurugram - Haryana 122002</h6><div class="address-telephone"><div class="telephone-number-block"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x"></i></span> <span class="telephone-number">1800 202 7707 | Toll Free Number</span></div><div class="telephone-number-block"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x"></i></span> <span class="telephone-number">+91 971717 0578 | Central Reservation</span></div><div class="address-email"><a href="mailto:centralreservations@theclarkshotels.com?Subject=Enquiry" target="_top"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-envelope fa-stack-1x"></i></span> <span class="email-id">centralreservations@theclarkshotels.com</span></a></div></div></address></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="content_wrapper">
+                        <div class="no-gutter clearfix">
+
+{% comment %} --------------------------------------BLACK--BAR--------------------------------------------------------------------- {% endcomment %}
+
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-text-banner simp-custom-address-bar" data-widget-id="2296196" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h2>India's Fastest<br/> Growing Hotel Chain</h2>
+                                            <p><strong>03</strong><br/> Countries</p>
+                                            <p><strong>110+</strong><br/> Destinations</p>
+                                            <p><strong>130+</strong><br/> Hotels</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+{% comment %} --------------------------------------BLACK--BAR--------------------------------------------------------------------- {% endcomment %}                            
+
+
+                        {% include "components/unexplore.html" %}
+                          
+                        {% include "components/section2.html" %}
+
+
+                        {% include "components/exploreourproperties.html" %}
+
+
+                    <div>
+
+                    </div>
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-offer-header simp-custom-hide-widget" data-widget-id="2292613" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h4>Offers &amp; Promotions</h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-offer-slider simp-custom-hide-widget" data-widget-id="2292775" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider2" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_323,h_323,r_0,c_crop,q_80,fl_progressive/w_323,f_auto,c_fit/the-clarks-hotels-resorts/parentslider2_tysmrg"
+                                            style="aspect-ratio: 323/323; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>New Year's Package</h6>
+                                            <p>Start the New Year with a celebration to remember! The Clarks Hotels &amp; Resorts offers amazing New Year's packages curated just for you.</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider3" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_437,h_437,r_0,c_crop,q_80,fl_progressive/w_437,f_auto,c_fit/the-clarks-hotels-resorts/parentslider3_leijot"
+                                            style="aspect-ratio: 437/437; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Direct Booking Offer</h6>
+                                            <p>Book your stays at The Clarks Hotels &amp; Resorts directly through our website and get an amazing 20% off on the best available rates!</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider2" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_323,h_323,r_0,c_crop,q_80,fl_progressive/w_323,f_auto,c_fit/the-clarks-hotels-resorts/parentslider2_tysmrg"
+                                            style="aspect-ratio: 323/323; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum Lorem</h6>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider1" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_437,h_437,r_0,c_crop,q_80,fl_progressive/w_437,f_auto,c_fit/the-clarks-hotels-resorts/parentslider1_k4kuyn"
+                                            style="aspect-ratio: 437/437; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum Lorem</h6>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-leftimage two-col bgImageContainer fullWidthWidget simp-custom-clarks-home-newExp-lImgRTxt simp-custom-hide-widget" data-widget-id="2292577" style=" background-image: url(https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_486,w_5000,h_2424,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/the-clarks-hotels-resorts/Premium_Cottage_02_qusjsz_v6zf4n);">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-md-6 left-box"><img alt="Premium Cottage 02" class="img-responsive image-content" height="256" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_1270,y_757,w_3730,h_1864,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-clarks-hotels-resorts/Premium_Cottage_02_qusjsz"
+                                            style="aspect-ratio: 3730/1864; " width="455" /></div>
+                                    <div class="col-md-6 right-box">
+                                        <div class="text-content">
+                                            <div class="text-content-wrapper">
+                                                <p></p>
+                                                <h5>It’s time to find a new Experience</h5>
+                                                <div contenteditable="false" tabindex="-1">
+                                                    <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Explore Now</span></a></div>
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+
+
+
+                            <div></div>
+                           
+
+
+
+
+
+                
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-whatmakesUs simp-custom-hide-widget" data-widget-id="2292845" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h4>WHAT MAKES US STAND OUT?</h4><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon1_edz2mk" /><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon2_ptfci6"
+                                            /><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon3_clhkyw" />
+                                            <div class="threetxt">
+                                                <h6>Trust</h6>
+                                                <h6>Respect</h6>
+                                                <h6>Passion</h6>
+                                            </div>
+                                            <p>We are backed by our Ethics!</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% include "components/media_section.html" %}
+
+                            {% include "components/about_section.html" %}
+                         
+
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-instagram-header simp-custom-hide-widget" data-widget-id="2292856" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h4>Stay Tuned On Our Instagram!</h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-instagram simp-custom-hide-widget" data-widget-id="2292857" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content"><img alt="IMG 0655" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_608,y_0,w_2432,h_2432,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/clarks-inn-suites-near-raipur-airport/IMG_0655_fdyo9z"
+                                            style="aspect-ratio: 2432/2432; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum, Lorem Ipsum</h6>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="DLP02098-Edit" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3981/x_510,y_0,w_3981,h_3981,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/divine-clarks-inn-suites-kurukshetra/DLP02098-Edit_nh01tt"
+                                            style="aspect-ratio: 3981/3981; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum, Lorem Ipsum</h6>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="Hotel IMG 01" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3732/x_634,y_0,w_3732,h_3732,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/keshav-clarks-inn-gadag/Hotel_IMG_01_mmwdvo"
+                                            style="aspect-ratio: 3732/3732; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum, Lorem Ipsum</h6>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="Exterior @ Clarks Inn Express, Rishikesh" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3330/x_835,y_0,w_3330,h_3330,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/clarks-inn-express-rishikesh/Exterior_3_tixhnc"
+                                            style="aspect-ratio: 3330/3330; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum, Lorem Ipsum</h6>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider1" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_437,h_437,r_0,c_crop,q_80,fl_progressive/w_437,f_auto,c_fit/the-clarks-hotels-resorts/parentslider1_k4kuyn"
+                                            style="aspect-ratio: 437/437; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum, Lorem Ipsum</h6>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-reviews-text simp-custom-hide-widget" data-widget-id="2292858" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h4>Let Customers<br/> Speak For Us</h4>
+                                            <ul>
+                                                <li><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_30.408,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                <li><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_30.408,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                <li><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_30.408,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                <li><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_30.408,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                <li><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_30.408,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                            </ul>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-reviews-slider simp-custom-hide-widget" data-widget-id="2292861" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content"><img alt="clarksmain" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_550,h_309,r_0,c_crop,q_80,fl_progressive/w_550,f_auto,c_fit/the-clarks-hotels-resorts/clarksmain_mumgnq"
+                                            style="aspect-ratio: 550/309; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum</p>
+                                            <div>
+                                                <p>Lorem Ipsum</p>
+                                                <ul>
+                                                    <li><img alt="Image 1" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 2" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 3" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 4" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 5" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                </ul>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="clarksmain" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_550,h_309,r_0,c_crop,q_80,fl_progressive/w_550,f_auto,c_fit/the-clarks-hotels-resorts/clarksmain_mumgnq"
+                                            style="aspect-ratio: 550/309; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum</p>
+                                            <div>
+                                                <p>Lorem Ipsum</p>
+                                                <ul>
+                                                    <li><img alt="Image 1" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 2" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 3" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 4" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 5" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                </ul>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="clarksmain" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_550,h_309,r_0,c_crop,q_80,fl_progressive/w_550,f_auto,c_fit/the-clarks-hotels-resorts/clarksmain_mumgnq"
+                                            style="aspect-ratio: 550/309; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum</p>
+                                            <div>
+                                                <p>Lorem Ipsum</p>
+                                                <ul>
+                                                    <li><img alt="Image 1" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 2" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 3" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 4" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 5" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                </ul>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="clarksmain" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_550,h_309,r_0,c_crop,q_80,fl_progressive/w_550,f_auto,c_fit/the-clarks-hotels-resorts/clarksmain_mumgnq"
+                                            style="aspect-ratio: 550/309;"/>
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum</p>
+                                            <div>
+                                                <p>Lorem Ipsum</p>
+                                                <ul>
+                                                    <li><img alt="Image 1" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 2" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 3" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 4" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                    <li><img alt="Image 5" src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_21,f_auto,c_limit/the-clarks-hotels-resorts-demo/Rectangle_318_hwokyt" /></li>
+                                                </ul>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+{% comment %} ---------------------------------------VIDEO-------------------------------------------------------------- {% endcomment %}
+
+                            <div class="clearfix widget-wrapper wt1img fullWidthWidget simp-custom-newsletter-image simp-custom-hide-widget" data-widget-id="2292869" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col"><img alt="clarksmain" class="img-responsive image-content" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_69,y_0,w_412,h_309,r_0,c_crop,q_80,fl_progressive/w_412,f_auto,c_fit/the-clarks-hotels-resorts/clarksmain_mumgnq"
+                                            style="aspect-ratio: 412/309; " /></div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-brand-video" data-widget-id="2296203" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p><video autoplay="" class="elementor-video" controlslist="nodownload" loop="" muted="muted" playsinline="" preload="none" src="https://stayblissimages.s3.amazonaws.com/footer_video.mp4"
+                                                width="100%"> </video></p>
+                                    </div>
+                                </div>
+                            </div>
+{% comment %} ---------------------------------------VIDEO-------------------------------------------------------------- {% endcomment %}
+                       
+
+
+                            {% include "components/newsletter.html" %}
+
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-hero-text simp-custom-hide-widget" data-widget-id="2292885" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h1>Welcome To The Clarks Hotels &amp; Resorts</h1>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-width simp-custom-hide-widget" data-widget-id="2246174" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;">The Clarks brand strives to bring together the frills expected by modern travellers with the standard goodness of traditional hospitality. A brand associated with premium accommodations at affordable prices, The
+                                            Clarks Hotels &amp; Resorts is now a group of 100+ unique hotels, resorts, service apartments and inns across 8 brands catering to differing tastes.<br/> <br/> We welcome you to stay, feast and rejoice at The
+                                            Clarks and become a part of an ever-growing family!</div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt3tb three-col simp-custom-fifty simp-custom-mobile-alignment simp-custom-hide-widget" data-widget-id="2198296" style=" ">
+                                <div class="col-sm-4 left-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-hotel" style="font-size: 42px;"></span><span style="color:#333333;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#333333;">115+ Hotels</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 center-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-map-marked-alt" style="font-size: 42px;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#555555;">100 Destinations</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 right-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-crown" style="font-size: 42px;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#555555;">10 Brands</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix widget-wrapper wt1tb bgImageContainer fullWidthWidget simp-custom-hide-widget" data-widget-id="2243699" style=" background-image: url(https://res.cloudinary.com/simplotel/image/upload/w_5000,h_2812/x_0,y_0,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/the-clarks-hotels-resorts/home-01_lmqtx0);">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="821656" href="./clarks-offers/book-direct-and-save-20.html" target="_self"><span class="text">Know More</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-hide-widget" data-widget-id="2231442" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h2 style="text-align: center;"><span style="color:null;">Our Hotels &amp; Resorts</span></h2>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-rightimage two-col simp-custom-our-hotel-and-resorts simp-custom-hide-widget" data-widget-id="2246789" style=" ">
+                                <div class="col-md-6 col-sm-6 left-box">
+                                    <div class="text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <div style="text-align: justify;">The vast and diverse landscapes of India have a plethora of experiences to offer. Amidst such sojourns are our hotels &amp; resorts to enhance your experience. The breathtaking beautiful mountainous regions
+                                                of Uttarakhand and Himachal Pradesh, the royal palaces and sanctuaries in Madhya Pradesh and Rajasthan, the historically rich locales of Uttar Pradesh. We celebrate the pristine beauty of the western ghats
+                                                through various efforts like our hotels in Karnataka. The Clarks Hotels and Resorts brings you all. We are happy to accommodate you during your trip. Experience our signature hospitality while you stay at
+                                                any of the top hotels in India under The Clarks groups.</div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 right-box"><a class="page_link" href="./brand-association.html" target="_blank"><span class="fa fa-link link_overlay"></span><img alt="Updated map-01" class="img-responsive image-content" height="256" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_2812/x_1094,y_0,w_2812,h_2812,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/the-clarks-hotels-resorts/Updated_map-01_jkc8bm" style="aspect-ratio: 2812/2812; " width="455"/></a></div>
+                            </div>
+                
+                           
+                        </div>
+                        <div class="no-gutter clearfix">
+                            <div class="widget-wrapper">
+                                <div class="social_feed clearfix section_bg"></div>
+                                <div class="promotions_block clearfix"></div>
+                                <div class="location_map_block clearfix"></div>
+                                <div class="custom_widgets_block clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+        {% include "components/footer.html" %}
+      
+       
+        <div class="hidden"></div>
+  
+
+        {% include "components/script.html" %}
+
+
+
+
+          
+        <a class="call_me call_me_phone" href="tel:+919555555563" target="_blank">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+        </a>
+</body>
+
+</html>
